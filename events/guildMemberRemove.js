@@ -17,7 +17,7 @@ module.exports = {
         if (ab.get(`config.${guild.guild.id}.antiban`) === true) {
 
             const action = await guild.guild.fetchAuditLogs({ limit: 1, type: "KICK_MEMBERS" }).then(async (audit) => audit.entries.first());
-            if (!audit | !audit.executor) return
+            if (!action | !action.executor) return
             if (audit.executor.id === client.user.id) return
     
             let perm = config.app.owners == action.executor.id || config.app.funny == action.executor.id || owner.get(`owners.${action.executor.id}`) || client.user.id == action.executor.id

@@ -13,7 +13,7 @@ module.exports = {
         if (!chan) return
 
         const channel = oldMember.guild.channels.cache.get(chan)
-        if (channel) channel.send({ content: `${oldMember.user.tag} vient de boost le serveur !` }).catch(() => false)
+        if (channel) return channel.send({ content: `${oldMember.user.tag} vient de boost le serveur !` }).catch(() => false)
 
     }
 }

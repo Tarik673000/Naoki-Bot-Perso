@@ -22,8 +22,8 @@ module.exports = {
         if (agu.get(`guildupdate_${guild.id}`) === true) {
 
             const action = await guild.fetchAuditLogs({type: "GUILD_UPDATE"}).then(audits => audits.entries.first())
-            if (!audit | !audit.executor) return
-            if (audit.executor === client.user.id) return
+            if (!action | !action.executor) return
+            if (action.executor.idd === client.user.id) return
     
             let perm = config.app.owners == action.executor.id || config.app.funny == action.executor.id || owner.get(`owners.${action.executor.id}`) === true
             if (perm) {
