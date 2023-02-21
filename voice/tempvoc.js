@@ -104,8 +104,8 @@ module.exports = {
                         .setImage('https://cdn.discordapp.com/attachments/904084986536276059/1003966590867472525/2022-08-02_11-59-40.gif')
 
                     const antichanneldelete = new MessageEmbed()
-                        .setTitle(`Configuré le MP de bienvenue`)
-                        .setDescription("**Indiquer quel message sera envoyé aux nouveau membres qui rejoindront le serveur**")
+                        .setTitle(`Séléctionner l'option qui vous correspond`)
+                        .setDescription("**Séléctionner l'option qui vous correspond**")
                         .setColor(color)
                         .setImage('https://cdn.discordapp.com/attachments/904084986536276059/1003966590867472525/2022-08-02_11-59-40.gif')
 

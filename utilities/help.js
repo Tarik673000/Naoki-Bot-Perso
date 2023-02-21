@@ -591,7 +591,7 @@ Owner bot partie 2
 Change le statut du bot
                 
 **\`${pf}pfp\`**
-Permet d'activé ou désactuvé le mode pfps sur un salon
+Permet d'activé ou désactivé le mode pfps sur un salon
                 
 **\`${pf}mp\`**
 Permet d'envoyer un message privé à un membre via le bot
@@ -1200,7 +1200,7 @@ Faites attention de ne quand meme pas attribué cette permission à n'importe qu
 Change le statut du bot
                 
 **\`${pf}pfp\`**
-Permet d'activé ou désactuvé le mode pfps sur un salon
+Permet d'activé ou désactivé le mode pfps sur un salon
                 
 **\`${pf}mp\`**
 Permet d'envoyer un message privé à un membre via le bot
