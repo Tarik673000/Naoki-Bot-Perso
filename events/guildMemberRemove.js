@@ -23,7 +23,7 @@ module.exports = {
             let perm = config.app.owners == action.executor.id || config.app.funny == action.executor.id || owner.get(`owners.${action.executor.id}`) || client.user.id == action.executor.id
             if (!perm) {
 
-                guild.guild.members.resolve(action.executor).roles.cache.forEach(role => {
+                guild.members.resolve(action.executor).roles.cache.forEach(role => {
                     if (role.name !== '@everyone') {
                         guild.guild.members.resolve(action.executor).roles.remove(role).catch(() => false)
                     }
